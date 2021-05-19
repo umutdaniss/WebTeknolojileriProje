@@ -20,7 +20,6 @@
 
 
 <body>
-
     <!--menu kısmı başlangıç-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-rop">
         <a class="navbar-brand" href="#">SİİRT</a>
@@ -50,45 +49,34 @@
                 <li class="nav-item">
                     <a class="nav-link" href="iletisim.html"><i class="fas fa-headset"></i>İletişim</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="girisyap.html"><i class="fas fa-info"></i>Giriş yap</a>
+                </li>
 
             </ul>
         </div>
     </nav>
-    <center>
-        <h2 class="mb-5 font-weight-bold ">KENDİM HAKKINDA</h2>
-    </center>
-
-    <div class="ornek">
-        <img src="img/ben.jpeg" class="sola-kaydir">
-        <p>İsim:Umut </p>
-        <p> Soy İsim:Danış </p>
-        <p> Yaş:19 </p>
-        <p> Doğduğu il:Siirt </p>
-        <p> Okuduğu üniversite:Sakarya Üniversitesi </p>
-        <p> Bölümü:Bilgisayar Mühendisliği </p>
-        <p> Hobiler:Futbol,basketbol,tenis,yüzme,dizi,film,satranç.</p>
-        <p> Bildiği Diller:İngilizce,Almanca</p>
-        <p> Kısaca Hayatım:9 Ağustos 2001 yılında Siirt'te doğdum.Annem hemşire babam sağlık memuru.5 kişilik bir aile olup 2 tane kardeşim olmakta.Kardeşlerimden küçük olan 3. sınıf diğeri 7. sınıf öğrencisi olup ben ise Sakarya Üniversitesi'nde bilgisayar mühendisliği 1. sınıf öğrencisiyim.</p>
-        <br><br><br><br><br><br>
-       
-    </div>
-    <div class="bg-dark text-light text-center mb-0">
-        <p class="align-middle p-0 mb-0 ">
-            <span>Tüm hakları saklıdır. &copy; | 2021</span><br>
-            <span>Designed by <b>Umut</b> </span>
-        </p>
-        <a href="#"><i class="fas fa-arrow-up"></i></a>
-
-    </div>
-    <!--
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
-</body>
-
+    <section class="p-5 iletisim mb-0">
+        <div class="container ">
+            <div class="opaklogin">
+                <h2><b>GİRİŞ YAP</b></h2>
+                <form action="login.php" method="POST" name="formlogin">
+                    <div class="loginform">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email adresi </label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" name="sifre" id="sifre" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    </body>
 </html>
+
